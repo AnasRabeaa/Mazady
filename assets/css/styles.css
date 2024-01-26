@@ -238,6 +238,19 @@ img {
     color: var(--first-color);
 }
 
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--first-color-alt);
+    color: var(--white-color);
+    padding: 0.5rem 2rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
     .bar2 {
@@ -444,6 +457,93 @@ img {
     display: block;
 }
 
+.auctions-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc((100% / 4) - 30px);
+    margin: 10px;
+    padding: 20px;
+    text-align: right; /* Set text alignment to right for RTL */
+    background-color: var(--first-color-light);
+    box-shadow: var(--shadow-color);
+    position: relative;
+}
+
+.card .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+}
+
+.card .details .num {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 0px 20px;
+    margin-bottom: 5px;
+    background-color: var(--white-color);
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.card .details .status {
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1px 15px;
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+}
+
+.card i {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    color: var(--red-color);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.decr a {
+    color: var(--blue-color)
+}
+
+.red {
+    background-color: var(--red-color);
+}
+
+.green {
+    background-color: var(--green-color);
+}
+
+.blue {
+    background-color: var(--first-color-alt);
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 990px) {
+    .auctions-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(50% - 40px); /* Adjusted for some margin */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
 
 
 /*=============== SEARCH CONTAINER RESPONSIVE STYLES ===============*/
