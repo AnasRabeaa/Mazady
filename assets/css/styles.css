@@ -86,7 +86,7 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
     :root {
-        --biggest-font-size: 4.5rem;
+        --biggest-font-size: 2.5rem;
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
@@ -526,6 +526,81 @@ img {
 
 .blue {
     background-color: var(--first-color-alt);
+}
+
+.counter {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.counter .soon {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--first-color-alt);
+}
+.soon .time, .soon .red {
+    padding: 2px 15px;
+    color: var(--white-color);
+    font-size: var(--h1-font-size);
+    border-radius: 5px;
+    margin: 2rem auto;;
+}
+
+.soon .time {
+    font-size: var(--small-font-size);
+}
+
+.timer {
+    display: flex;
+}
+
+.timer div {
+    margin-right: 10px;
+    background-color: var(--white-color);
+    color: var(--first-color);
+    padding: 5px;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    position: relative;
+}
+
+.timer .day .smail,
+.timer .hour .smail, 
+.timer .min .smail, 
+.timer .sec .smail {
+    position: absolute;
+    color: var(--first-color);
+    font-size: var(--smaller-font-size);
+    font-weight: 400;
+}
+
+.timer .day .smail {
+    bottom: -20px;
+    right: 5px;
+}
+
+.timer .hour .smail {
+    bottom: -20px;
+    right: 0px;
+}
+
+.timer .min .smail{
+    bottom: -20px;
+    right: 0px;
+}
+
+.timer .sec .smail {
+    bottom: -20px;
+    right: 5px;
+}
+
+.counter img {
+    width: 52%;
+    max-height: 450px;
 }
 
 /* Media Queries for responsiveness */
