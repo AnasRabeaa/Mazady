@@ -2,650 +2,752 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 .tajawal-extralight {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 200;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .tajawal-light {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .tajawal-regular {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .tajawal-medium {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .tajawal-bold {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .tajawal-extrabold {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .tajawal-black {
-    font-family: "Tajawal", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-    --header-height: 3.5rem;
+  --header-height: 3.5rem;
 
-    /*========== Colors ==========*/
-    --first-color: #1d3557;
-    --first-color-alt: #18a0fba9;
-    --first-color-light: #f3f5f7;
-    --title-color: #1d3557;
-    --green-color: #38cb89;
-    --blue-color: #0d6efd;
-    --red-color: #e63946;
-    --white-color: hsl(0, 0%, 100%);
-    --body-color: hsl(0, 0%, 100%);
-    --container-color: hsl(0, 0%, 100%);
-    --shadow-color: hsla(var(--hue), 90%, 30%, 0.1);
+  /*========== Colors ==========*/
+  --first-color: #1d3557;
+  --first-color-alt: #18a0fba9;
+  --first-color-light: #f3f5f7;
+  --title-color: #1d3557;
+  --green-color: #38cb89;
+  --blue-color: #0d6efd;
+  --red-color: #e63946;
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 100%);
+  --shadow-color: hsla(var(--hue), 90%, 30%, 0.1);
 
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Tajawal", sans-serif;
-    --biggest-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
-    --padding: 0 5rem;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Tajawal", sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --padding: 0 5rem;
 
-    /*========== Font weight ==========*/
-    --font-regular: 400;
-    --font-medium: 500;
-    --font-semi-bold: 600;
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
-    /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
-    :root {
-        --biggest-font-size: 2.5rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1.125rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
-    }
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
 /*=============== BASE ===============*/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body,
 input,
 textarea,
 button {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
 }
 
 body {
-    background-color: var(--body-color);
-    color: var(--text-color);
-    transition: background-color 0.4s;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color 0.4s;
 }
 
 input,
 button,
 textarea {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-    max-width: 1080px;
-    margin-inline: 5rem;
+  max-width: 1080px;
+  margin-inline: 5rem;
 }
 
 .grid {
-    display: grid;
-    gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .section {
-    padding-block: 5rem 1rem;
+  padding-block: 5rem 1rem;
 }
 
 .section__title {
-    font-size: var(--h1-font-size);
-    text-align: center;
-    margin-bottom: 2rem;
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .main {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /*=============== BUTTON ===============*/
 .btn1 {
-    background-color: var(--first-color-alt);
-    color: var(--white-color);
+  background-color: var(--first-color-alt);
+  color: var(--white-color);
 }
 
 .btn2 {
-    color: var(--first-color-alt);
-    background-color: var(--white-color);
+  color: var(--first-color-alt);
+  background-color: var(--white-color);
 }
 
 /*=============== HEADER & NAV ===============*/
 .header {
-    width: 100%;
-    height: 110px;
+  width: 100%;
+  height: 110px;
 }
 
 .bar1 {
-    height: 50%;
-    background: var(--first-color);
-    padding: var(--padding);
+  height: 50%;
+  background: var(--first-color);
+  padding: var(--padding);
 }
 
 .btn-group {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
 }
 
 .btn-group button {
-    height: 80%;
-    align-items: center;
-    margin-right: 1rem;
-    padding: 0 2rem;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-regular);
-    border-radius: 5px;
+  height: 80%;
+  align-items: center;
+  text-align: center;
+  margin-right: 1rem;
+  padding: 0 2rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-regular);
+  border-radius: 5px;
 }
 
 .bar2 {
-    height: 50%;
-    padding: var(--padding);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 50%;
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
-    width: 69px;
-    height: 47px;
+  width: 69px;
+  height: 47px;
 }
 
 .header-links .header-link {
-    margin: 0 1.5rem;
-    color: var(--first-color);
+  margin: 0 1.5rem;
+  color: var(--first-color);
 }
 
 .header-icons i {
-    margin: 0 2rem;
-    color: var(--first-color);
+  margin: 0 2rem;
+  color: var(--first-color);
 }
 
 .more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--first-color-alt);
-    color: var(--white-color);
-    padding: 0.5rem 2rem;
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-regular);
-    border-radius: 5px;
-    margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--first-color-alt);
+  color: var(--white-color);
+  padding: 0.5rem 2rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-regular);
+  border-radius: 5px;
+  margin: 20px auto;
 }
 
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
-    .bar2 {
-        flex-direction: column;
-        align-items: center;
-    }
+  .bar2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .btn-group button {
-        margin-right: 0.5rem;
-        padding: 0.5rem;
-    }
+  .btn-group button {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+  }
 
-    .header-links, .header-icons {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-    }
+  .header-links,
+  .header-icons {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+  }
 
-    .header-links .header-link, .header-icons i {
-        margin: 0.5rem;
-    }
+  .header-links .header-link,
+  .header-icons i {
+    margin: 0.5rem;
+  }
 }
 
 /*=============== HOME ===============*/
 .home .cover {
-    background: var(--first-color-alt);
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
+  background: var(--first-color-alt);
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .home .cover .about {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .home .cover .about h1 {
-    color: var(--white-color);
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-semi-bold);
-    padding: 2rem 5rem;
+  color: var(--white-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  padding: 2rem 5rem;
 }
 
 .home .cover .about p {
-    color: var(--white-color);
-    font-size: var(--normal-font-size);
-    padding: 0 5rem;
+  color: var(--white-color);
+  font-size: var(--normal-font-size);
+  padding: 0 5rem;
 }
 
 .home .cover .about-img {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .home .cover .about-img img {
-    height: 100%;
-    width: 100%;
-    float: left;
+  height: 100%;
+  width: 100%;
+  float: left;
 }
 
 .startBid {
-    height: calc(100vh - (60vh + 110px));
-    margin: 0 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  height: calc(100vh - (60vh + 110px));
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
 }
 
 .startBid h1 {
-    color: var(--first-color);
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
 }
 
 .startBid p {
-    color: var(--first-color);
-    font-size: var(--small-font-size);
+  color: var(--first-color);
+  font-size: var(--small-font-size);
 }
 
 /*=============== AUCTIONS ===============*/
 
 .auctions-header {
-    position: relative;
-    width: 100%;
-    height: 209px;
-    background-color: var(--first-color);
-    overflow: hidden;
-    /* Ensure child images don't overflow */
+  position: relative;
+  width: 100%;
+  height: 209px;
+  background-color: var(--first-color);
+  overflow: hidden;
+  /* Ensure child images don't overflow */
 
-    /* Center the h1 using flexbox */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* Center the h1 using flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .auctions-header h1 {
-    color: var(--white-color);
-    font-size: 4rem;
+  color: var(--white-color);
+  font-size: 4rem;
 }
 
 .auctions-header img {
-    position: absolute;
-    bottom: 0;
-    height: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
 }
 
 .auctions-header .number5 {
-    right: 400px;
+  right: 400px;
 }
 
 .auctions-header .number3 {
-    left: 300px;
+  left: 300px;
 }
 
 .auctions-header .number9 {
-    right: 200px;
+  right: 200px;
 }
 
 .search-container {
-    text-align: right;
-    max-width: 750px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 auto;
-    padding: 80px 20px;
+  text-align: right;
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 80px 20px;
 }
 
 .search-button {
-    width: 20%;
-    padding: 10px;
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    cursor: pointer;
-    border: 2px solid var(--blue-color);
-    border-radius: 5px 0 0 5px;
+  width: 20%;
+  padding: 10px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border: 2px solid var(--blue-color);
+  border-radius: 5px 0 0 5px;
 }
 
-
 .search-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid var(--blue-color);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid var(--blue-color);
 }
 
 /* Style the dropdown button */
 .category-dropdown {
-    padding: 10px;
-    color: var(--first-color);
-    border: 2px solid var(--blue-color);
-    background-color: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center; 
-    width: 150px;
-    border-radius: 0 5px 5px 0;
+  padding: 10px;
+  color: var(--first-color);
+  border: 2px solid var(--blue-color);
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  border-radius: 0 5px 5px 0;
 }
 
 .category-dropdown i {
-    margin-right: 20px; 
-    transition: transform 0.3s ease;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    text-align: right;
-    border: 2px solid var(--blue-color); 
-    border-top: none; 
-    transition: max-height 0.3s ease-out;
-    width: 152px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: right;
+  border: 2px solid var(--blue-color);
+  border-top: none;
+  transition: max-height 0.3s ease-out;
+  width: 152px;
 }
 
 .dropdown-content a {
-    color: var(--first-color);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid var(--blue-color); 
+  color: var(--first-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid var(--blue-color);
 }
 
-
-
-
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 .dropdown:hover i {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .auctions-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
-    width: calc((100% / 4) - 30px);
-    margin: 10px;
-    padding: 20px;
-    text-align: right; /* Set text alignment to right for RTL */
-    background-color: var(--first-color-light);
-    box-shadow: var(--shadow-color);
-    position: relative;
+  width: calc((100% / 4) - 30px);
+  margin: 10px;
+  padding: 20px;
+  text-align: right; /* Set text alignment to right for RTL */
+  background-color: var(--first-color-light);
+  box-shadow: var(--shadow-color);
+  position: relative;
 }
 
 .card .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
 }
 
 .card .details .num {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-semi-bold);
-    padding: 0px 20px;
-    margin-bottom: 5px;
-    background-color: var(--white-color);
-    width: fit-content;
-    border-radius: 5px;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  padding: 0px 20px;
+  margin-bottom: 5px;
+  background-color: var(--white-color);
+  width: fit-content;
+  border-radius: 5px;
 }
 
 .card .details .status {
-    border-radius: 5px;
-    width: fit-content;
-    padding: 1px 15px;
-    color: var(--white-color);
-    font-size: var(--small-font-size);
+  border-radius: 5px;
+  width: fit-content;
+  padding: 1px 15px;
+  color: var(--white-color);
+  font-size: var(--small-font-size);
 }
 
 .card i {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    font-size: 25px;
-    color: var(--red-color);
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 25px;
+  color: var(--red-color);
 }
 
 .card img {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
 }
 
 .decr a {
-    color: var(--blue-color)
+  color: var(--blue-color);
 }
 
 .red {
-    background-color: var(--red-color);
+  background-color: var(--red-color);
 }
 
 .green {
-    background-color: var(--green-color);
+  background-color: var(--green-color);
 }
 
 .blue {
-    background-color: var(--first-color-alt);
+  background-color: var(--first-color-alt);
 }
 
+/*=============== COUNTER ===============*/
 .counter {
-    width: 100%;
-    height: auto;
-    display: flex;
+  width: 100%;
+  height: auto;
+  display: flex;
 }
 
 .counter .soon {
-    width: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--first-color-alt);
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--first-color-alt);
 }
-.soon .time, .soon .red {
-    padding: 2px 15px;
-    color: var(--white-color);
-    font-size: var(--h1-font-size);
-    border-radius: 5px;
-    margin: 2rem auto;;
+.soon .time,
+.soon .red {
+  padding: 2px 15px;
+  color: var(--white-color);
+  font-size: var(--h1-font-size);
+  border-radius: 5px;
+  margin: 2rem auto;
 }
 
 .soon .time {
-    font-size: var(--small-font-size);
+  font-size: var(--small-font-size);
 }
 
 .timer {
-    display: flex;
+  display: flex;
 }
 
 .timer div {
-    margin-right: 10px;
-    background-color: var(--white-color);
-    color: var(--first-color);
-    padding: 5px;
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    position: relative;
+  margin-right: 10px;
+  background-color: var(--white-color);
+  color: var(--first-color);
+  padding: 5px;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  position: relative;
 }
 
 .timer .day .smail,
-.timer .hour .smail, 
-.timer .min .smail, 
+.timer .hour .smail,
+.timer .min .smail,
 .timer .sec .smail {
-    position: absolute;
-    color: var(--first-color);
-    font-size: var(--smaller-font-size);
-    font-weight: 400;
+  position: absolute;
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 400;
 }
 
 .timer .day .smail {
-    bottom: -20px;
-    right: 5px;
+  bottom: -20px;
+  right: 5px;
 }
 
 .timer .hour .smail {
-    bottom: -20px;
-    right: 0px;
+  bottom: -20px;
+  right: 0px;
 }
 
-.timer .min .smail{
-    bottom: -20px;
-    right: 0px;
+.timer .min .smail {
+  bottom: -20px;
+  right: 0px;
 }
 
 .timer .sec .smail {
-    bottom: -20px;
-    right: 5px;
+  bottom: -20px;
+  right: 5px;
 }
 
 .counter img {
-    width: 52%;
-    max-height: 450px;
+  width: 52%;
+  max-height: 450px;
 }
-
-/* Media Queries for responsiveness */
-@media screen and (max-width: 990px) {
-    .auctions-container {
-        flex-wrap: wrap;
-    }
-
-    .card {
-        width: calc(50% - 40px); /* Adjusted for some margin */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        width: calc(100% - 20px);
-    }
-}
-
-
-/*=============== SEARCH CONTAINER RESPONSIVE STYLES ===============*/
-@media screen and (max-width: 768px) {
-    .search-container {
-        flex-direction: column; /* Stack elements in a column on small screens */
-        align-items: flex-start; /* Align items to the start on small screens */
-        padding: 20px; /* Reset padding for smaller screens */
-    }
-
-    .search-input,
-    .category-dropdown,
-    .search-button {
-        width: 100%; /* Make each element take full width on small screens */
-        margin-bottom: 10px; /* Add space between elements on small screens */
-    }
-}
-
-/* ... (remaining styles) ... */
-
-
-/*=============== COUNTER ===============*/
 
 /*=============== CATEGORIES ===============*/
+.categories h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
 
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.categories-container .card {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(25% - 20px);
+  max-width: 200px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.categories-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.categories-container .card img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--first-color);
+}
+
+@media (max-width: 768px) {
+  .categories-container {
+    padding: 10px;
+  }
+  .categories-container .card {
+    width: calc(50% - 20px);
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+.add-aucation {
+  width: 100%;
+  height: 350px;
+  background-color: var(--first-color);
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.add-aucation .right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.add-aucation .right p {
+  color: var(--white-color);
+margin: 3rem auto;
+}
+
+.add-aucation .right .btn1 {
+  margin: 1rem auto;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+
+.add-aucation img {
+  width: 35%;
+  max-height: 100%;
+}
 /*=============== How to start ===============*/
 
 /*=============== Why us ===============*/
 
 /*=============== FOOTER ===============*/
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 990px) {
+  .auctions-container {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: calc(50% - 40px); /* Adjusted for some margin */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+/*=============== SEARCH CONTAINER RESPONSIVE STYLES ===============*/
+@media screen and (max-width: 768px) {
+  .search-container {
+    flex-direction: column; /* Stack elements in a column on small screens */
+    align-items: flex-start; /* Align items to the start on small screens */
+    padding: 20px; /* Reset padding for smaller screens */
+  }
+
+  .search-input,
+  .category-dropdown,
+  .search-button {
+    width: 100%; /* Make each element take full width on small screens */
+    margin-bottom: 10px; /* Add space between elements on small screens */
+  }
+}
+
+/* ... (remaining styles) ... */
