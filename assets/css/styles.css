@@ -1,48 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
-.tajawal-extralight {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.tajawal-light {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.tajawal-regular {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.tajawal-medium {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.tajawal-bold {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.tajawal-extrabold {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.tajawal-black {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -468,9 +426,10 @@ img {
 }
 
 .auctions-container {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
+  margin: 5rem;
 }
 
 .card {
@@ -711,11 +670,164 @@ margin: 3rem auto;
   width: 35%;
   max-height: 100%;
 }
+
 /*=============== How to start ===============*/
 
+.start-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start-container img {
+    width: 350px;
+}
+
+.start-container .how {
+    padding: 1rem;
+}
+.start-container .how h3 {
+    font-size: var(--h1-font-size);
+}
+
+.start-container .how ul li {
+    margin: 1.5rem;
+}
+
+.start-container .how ul li span {
+    height: 20px;
+    width: 20px;
+    padding: 0.5rem 1rem;
+    background-color: var(--first-color-alt);
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.start-container .how .btn2{
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid var(--first-color-alt);
+}
+
+.start .join {
+    width: 100%;
+    height: 200px;
+    background-color: var(--first-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+}
 /*=============== Why us ===============*/
+.Whyus .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.Whyus .title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.Whyus .title p {
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.resons {
+    margin: 2rem 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.resons .icon{
+    width: 80%;
+    background-color: var(--first-color-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.1rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.resons .card {
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+    background-color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.resons .center {
+    border-right: 1px solid var(--first-color-alt);
+    border-left: 1px solid var(--first-color-alt);
+}
+
+.resons .card h5 {
+    color: var(--first-color-alt);
+}
+
+.resons .card p {
+    font-size: var(--small-font-size);
+    color: var(--first-color);
+}
 
 /*=============== FOOTER ===============*/
+.footer {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding-bottom: 0.5rem;
+}
+
+.footer .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+
+.footer .info .logo img{
+    width: 100px;
+}
+
+.info .socail {
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+}
+
+.info .socail i {
+    margin-right: 15px;
+}
+
+.info .links a,
+.info .links h4 {
+    color: var(--white-color);
+}
+
+.footer .last {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .last .bold{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 990px) {
@@ -723,13 +835,13 @@ margin: 3rem auto;
     flex-wrap: wrap;
   }
 
-  .card {
+  .auctions-container .card {
     width: calc(50% - 40px); /* Adjusted for some margin */
   }
 }
 
 @media screen and (max-width: 768px) {
-  .card {
+  .auctions-container .card {
     width: calc(100% - 20px);
   }
 }
